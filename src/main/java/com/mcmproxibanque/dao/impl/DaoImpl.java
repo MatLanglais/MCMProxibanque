@@ -7,6 +7,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.mcmproxibanque.dao.interfaces.IDao;
@@ -17,6 +18,7 @@ public class DaoImpl<E> implements IDao<E> {
 
 	@PersistenceContext(unitName = "persistenceUnit")
 	protected EntityManager entityManager;
+	
 	protected E instance;
 	private Class<E> entityClass;
 

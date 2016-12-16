@@ -10,7 +10,7 @@ public class MainTest {
 
 	public static void main(String[] args) {
 //		Customer c = new Customer();
-		ApplicationContext context = new AnnotationConfigApplicationContext(com.mcmproxibanque.config.MCMConfig.class);
+		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/application-config.xml");
 //		System.out.println(c);
 
 	}
