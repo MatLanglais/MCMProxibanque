@@ -36,4 +36,10 @@ public class DaoImpl<E> implements IDao<E> {
 		return null;
 	}
 
+	@Override
+	public long count() throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

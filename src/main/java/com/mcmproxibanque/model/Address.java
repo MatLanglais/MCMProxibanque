@@ -9,6 +9,8 @@ public class Address {
 	String city;
 	String zipCode;
 	
+	public Address(){}
+	
 	// Getters & Setters
 	public String getStreet() {
 		return street;

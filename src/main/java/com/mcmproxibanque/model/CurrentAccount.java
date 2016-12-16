@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 public class CurrentAccount extends Account {
 	
 	Double overdraft;
+	
+	public CurrentAccount(){}
 
 	// Getters & Setters
 	public Double getOverdraft() {

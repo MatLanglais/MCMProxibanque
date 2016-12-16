@@ -13,5 +13,7 @@ public interface IDao<E> {
 	E findById(Object id) throws Exception;
 
 	List<E> findAll() throws Exception;
+	
+	long count() throws Exception;
 
 }
