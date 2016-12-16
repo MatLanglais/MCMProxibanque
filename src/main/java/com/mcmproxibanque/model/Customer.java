@@ -61,5 +61,14 @@ public class Customer {
 	public void setCurrentAccount(CurrentAccount currentAccount) {
 		this.currentAccount = currentAccount;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", forename=" + forename + ", address=" + address + ", email="
+				+ email + ", savingAccount=" + savingAccount + ", currentAccount=" + currentAccount + "]";
+	}
+	
+	
 
 }
