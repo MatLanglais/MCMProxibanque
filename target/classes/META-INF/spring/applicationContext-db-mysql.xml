@@ -36,6 +36,7 @@
 			</bean>
 		</property>
 		<!-- Persistence Unit -->
+		<property name="persistenceXmlLocation" value="META-INF/persistence.xml" />
 		<property name="persistenceUnitName" value="persistenceUnit" />
 	</bean>
 

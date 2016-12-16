@@ -7,10 +7,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.mcmproxibanque.dao.impl.CustomerDaoImpl;
@@ -21,7 +19,7 @@ import com.mcmproxibanque.model.Customer;
 import com.mcmproxibanque.model.SavingAccount;
 
 @ContextConfiguration
-@RunWith(SpringJUnit4ClassRunner.class)
+//@RunWith(SpringJUnit4ClassRunner.class)
 public class persistenceTests {
 
 	@PersistenceContext
@@ -29,6 +27,7 @@ public class persistenceTests {
 
 	@Autowired
 	CustomerDaoImpl customerDao;
+	
 	@Autowired
 	EmployeeDaoImpl employeeDao;
 
