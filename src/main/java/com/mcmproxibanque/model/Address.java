@@ -1,5 +1,8 @@
 package com.mcmproxibanque.model;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Address {
 	
 	String street;
