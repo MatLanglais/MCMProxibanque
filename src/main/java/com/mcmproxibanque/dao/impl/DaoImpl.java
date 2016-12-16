@@ -32,19 +32,19 @@ public class DaoImpl<E> implements IDao<E> {
 		getEntityManager().merge(e);
 	}
 
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	@Override
 	public void remove(Object id) throws Exception {
 		getEntityManager().remove(findById(id));
 	}
 
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	@Override
 	public E findById(Object id) throws Exception {
 		return (E) getEntityManager().find(getEntityClass(), id);
 	}
 
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	@Override
 	@SuppressWarnings("unchecked")
 	public List<E> findAll() throws Exception {
@@ -86,10 +86,12 @@ public class DaoImpl<E> implements IDao<E> {
 		this.entityClass = entityClass;
 	}
 
+	@Transactional(readOnly=true)
 	@Override
 	public long count() throws Exception {
 		// TODO Auto-generated method stub
-		return 0;
+		return (Long) getEntityManager().createQuery("Select count(t) from " + getEntityClass().getSimpleName() + " t")
+				.getSingleResult();
 	}
 
 }
