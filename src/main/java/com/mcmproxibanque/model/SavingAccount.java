@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 public class SavingAccount extends Account {
 
 	Double rate;
+	
+	public SavingAccount(){}
 
 	// Getters & Setters
 	public Double getRate() {

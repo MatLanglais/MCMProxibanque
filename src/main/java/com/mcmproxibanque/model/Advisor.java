@@ -9,8 +9,10 @@ import javax.persistence.OneToMany;
 public class Advisor extends Employee {
 	
 	@OneToMany
-	HashMap<Long, Customer> customersMap;
-
+	HashMap<Long, Customer> customersMap = new HashMap<>();
+	
+	public Advisor(){}
+	
 	// Getters & Setters
 	public HashMap<Long, Customer> getCustomersMap() {
 		return customersMap;

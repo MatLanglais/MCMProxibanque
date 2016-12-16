@@ -16,6 +16,7 @@ public class Transfer  {
 	Long fromAccount;
 	Long toAccount;
 	
+	public Transfer(){}
 	
 	public String getDate() {
 		return date;

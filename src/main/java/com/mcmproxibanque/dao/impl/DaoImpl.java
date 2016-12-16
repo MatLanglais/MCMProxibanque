@@ -86,4 +86,10 @@ public class DaoImpl<E> implements IDao<E> {
 		this.entityClass = entityClass;
 	}
 
+	@Override
+	public long count() throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
