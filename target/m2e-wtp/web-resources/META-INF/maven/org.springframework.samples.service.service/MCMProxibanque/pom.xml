@@ -165,8 +165,7 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.2.2</version>
 		</dependency>
-		<!-- Logging the application's event -->
-		<dependency>
+		<!-- Logging the application's event -->		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.16</version>
